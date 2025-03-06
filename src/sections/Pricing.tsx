@@ -2,68 +2,80 @@
 import CheckIcon from "@/assets/check.svg";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
+import { SubscriptionForm } from "@/components/SubscriptionForm";
+import { useState } from "react";
 
 const pricingTiers = [
   {
-    title: "Free",
-    monthlyPrice: 0,
-    buttonText: "Get started for free",
+    title: "Starter",
+    monthlyPrice: 99,
+    buttonText: "Start your free trial",
+    trialPeriod: "14-day free trial",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "2GB storage",
-      "Integrations",
-      "Basic support",
+      "Up to 50 staff accounts",
+      "Patient management system",
+      "Basic scheduling and calendar",
+      "5GB storage",
+      "Basic analytics",
+      "Standard support",
     ],
   },
   {
     title: "Pro",
-    monthlyPrice: 9,
-    buttonText: "Sign up now",
+    monthlyPrice: 249,
+    buttonText: "Upgrade to Pro",
     popular: true,
     inverse: true,
     features: [
-      "Up to 50 project members",
-      "Unlimited tasks and projects",
+      "Up to 200 staff accounts",
+      "Advanced patient management",
+      "Advanced scheduling and shift management",
       "50GB storage",
-      "Integrations",
+      "Detailed analytics and reporting",
       "Priority support",
-      "Advanced support",
-      "Export support",
+      "AI-assisted diagnosis suggestions",
+      "AI-powered appointment optimization",
+      "Export capabilities (PDF, CSV)",
     ],
   },
   {
     title: "Business",
-    monthlyPrice: 19,
-    buttonText: "Sign up now",
+    monthlyPrice: 499,
+    buttonText: "Contact us for Business",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
+      "Unlimited staff accounts",
+      "Comprehensive patient and department management",
+      "Custom workflows and integrations",
       "200GB storage",
-      "Integrations",
+      "Advanced analytics with predictive insights",
       "Dedicated account manager",
-      "Custom fields",
-      "Advanced analytics",
-      "Export capabilities",
-      "API access",
-      "Advanced security features",
+      "AI-powered hospital resource optimization",
+      "AI-driven patient engagement tools",
+      "API access for custom integrations",
+      "Enhanced security and compliance tools",
+      "24/7 dedicated support",
     ],
   },
 ];
 
 export const Pricing = () => {
+  const [selectedPlan, setSelectedPlan] = useState<{
+    title: string;
+    monthlyPrice: number;
+  } | null>(null);
+
   return (
     <section className="py-24 bg-white">
       <div className="container">
         <div className="section-heading">
-          <h2 className="section-title">Pricing</h2>
+          <h2 className="section-title">Pricing Plans</h2>
           <p className="section-description mt-5">
-            Free forever. Upgrade for unlimited tasks, better security, and
-            exclusive features.
+            Start with a 14-day free trial. Upgrade for AI-powered tools,
+            advanced security, and full hospital management features.
           </p>
         </div>
         <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
@@ -116,6 +128,7 @@ export const Pricing = () => {
                   </span>
                 </div>
                 <button
+                  onClick={() => setSelectedPlan({ title, monthlyPrice })}
                   className={twMerge(
                     "btn btn-primary w-full mt-[30px]",
                     inverse === true && "bg-white text-black"
@@ -138,6 +151,34 @@ export const Pricing = () => {
             )
           )}
         </div>
+
+        {/* Afficher le formulaire lorsqu'un plan est sélectionné */}
+        {selectedPlan && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            className="fixed inset-0 bg-black/50 flex items-center justify-center p-4"
+          >
+            <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4">
+              <div className="bg-white p-8 rounded-lg w-full max-w-md">
+                <h3 className="text-xl font-bold mb-6">
+                  Complete Your Subscription
+                </h3>
+                <SubscriptionForm
+                  subscriptionPlan={selectedPlan.title}
+                  monthlyPrice={selectedPlan.monthlyPrice}
+                />
+                <button
+                  onClick={() => setSelectedPlan(null)}
+                  className="mt-4 w-full text-center text-sm text-gray-500 hover:text-gray-700"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
       </div>
     </section>
   );

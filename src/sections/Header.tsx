@@ -1,5 +1,5 @@
 import ArrowRight from "@/assets/arrow-right.svg";
-import Logo from "@/assets/logosaas.png";
+import Logo from "@/assets/vitalis-logo.png";
 import Image from "next/image";
 import MenuIcon from "@/assets/menu.svg";
 export const Header = () => {
@@ -27,7 +27,7 @@ export const Header = () => {
               <a href="">Help</a>
 
               <button className="bg-black text px-4 py-2 rounded-lg font-medium inline-flex align-item justify-center text-white tracking-tight">
-                Get for free
+                Free trial
               </button>
             </nav>
           </div>

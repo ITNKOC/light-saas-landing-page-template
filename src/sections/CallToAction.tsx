@@ -21,11 +21,13 @@ export const CallToAction = () => {
     >
       <div className="container">
         <div className="section-heading relative">
-          <h2 className="section-title">Sign up for free today</h2>
+          <h2 className="section-title">Start Your Free Trial Today</h2>
           <p className="section-description mt-5">
-            Celebrate the joy of accomplishment with an app designed to track
-            your progress and motivate your efforts.
+            Empower your hospital with AI-driven efficiency, seamless patient
+            management, and advanced security—experience the future of
+            healthcare operations.
           </p>
+
           <motion.img
             src={starImage.src}
             alt="Star Image"

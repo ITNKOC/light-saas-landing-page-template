@@ -1,8 +1,8 @@
 "use client";
 import ArrowIcon from "@/assets/arrow-right.svg";
-import cogImage from "@/assets/cog.png";
-import cylinderImage from "@/assets/cylinder.png";
-import noodleImage from "@/assets/noodle.png";
+import cogImage from "@/assets/hero4.png";
+import cylinderImage from "@/assets/heroSec1.png";
+import noodleImage from "@/assets/heroSec2.png";
 import Image from "next/image";
 import {
   motion,
@@ -30,15 +30,15 @@ export const Hero = () => {
           <div className="md:w-[478px]">
             <div className="tag">Version 2.0 is here</div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
-              Pathway to productivity
+              Care Meets Innovation
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-              Celebrate the joy of accomplishment with an app designed to track
-              your progress, motivate your efforts, and celebrate your
-              successes.
+              Simplify hospital management with our AI-powered SaaS platform.
+              Streamline operations, enhance patient care, and improve
+              efficiency—all in one place
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">Get for free</button>
+              <button className="btn btn-primary">Free trial</button>
               <button className="btn btn-text gap-1">
                 <span>Learn more</span>
                 <ArrowIcon className="h-5 w-5" />
@@ -51,7 +51,7 @@ export const Hero = () => {
               alt="Cog image"
               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
               animate={{
-                translateY: [-30, 30],
+                translateY: [-10, 10],
               }}
               transition={{
                 repeat: Infinity,
@@ -60,7 +60,7 @@ export const Hero = () => {
                 ease: "easeInOut",
               }}
             />
-            <motion.img
+            {/* <motion.img
               src={cylinderImage.src}
               width={220}
               height={220}
@@ -74,12 +74,11 @@ export const Hero = () => {
               src={noodleImage.src}
               width={220}
               alt="Noodle image"
-              className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
+              className="hidden lg:block absolute top-[524px] left-[448px]"
               style={{
-                rotate: 30,
                 translateY: translateY,
               }}
-            />
+            /> */}
           </div>
         </div>
       </div>

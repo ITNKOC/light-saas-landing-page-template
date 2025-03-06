@@ -1,5 +1,6 @@
 "use client";
-import productImage from "@/assets/product-image.png";
+import productImage from "@/assets/apercu.png";
+import productImage1 from "@/assets/apercu2.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
@@ -33,6 +34,7 @@ export const ProductShowcase = () => {
         </div>
         <div className="relative">
           <Image src={productImage} alt="Product Image" className="mt-10" />
+          <Image src={productImage1} alt="Product Image" className="mt-10" />
           <motion.img
             src={pyramidImage.src}
             alt="Pyramid Image"

@@ -15,58 +15,58 @@ import React from "react";
 
 const testimonials = [
   {
-    text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
+    text: "Managing patient records has never been easier. This platform centralizes everything, saving us valuable time.",
     imageSrc: avatar1.src,
-    name: "Jamie Rivera",
-    username: "@jamietechguru00",
+    name: "Dr. Emily Carter",
+    username: "@dremilycarter",
   },
   {
-    text: "Our team's productivity has skyrocketed since we started using this tool. ",
+    text: "Our hospital's workflow has become significantly more efficient. Scheduling and resource allocation are now seamless.",
     imageSrc: avatar2.src,
-    name: "Josh Smith",
-    username: "@jjsmith",
+    name: "Michael Johnson",
+    username: "@mjohnson_admin",
   },
   {
-    text: "This app has completely transformed how I manage my projects and deadlines.",
+    text: "With AI-powered tools, we can now predict patient needs more accurately, improving overall care quality.",
     imageSrc: avatar3.src,
-    name: "Morgan Lee",
-    username: "@morganleewhiz",
+    name: "Sarah Mitchell",
+    username: "@sarahmitchell_rn",
   },
   {
-    text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
+    text: "Since implementing this system, we've drastically reduced paperwork and administrative errors.",
     imageSrc: avatar4.src,
-    name: "Casey Jordan",
-    username: "@caseyj",
+    name: "Daniel Lee",
+    username: "@danlee_hospitalit",
   },
   {
-    text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
+    text: "The platform's intuitive interface has made it easy for all staff members to adapt quickly, from nurses to administrators.",
     imageSrc: avatar5.src,
-    name: "Taylor Kim",
-    username: "@taylorkimm",
+    name: "Jessica Parker",
+    username: "@jessparker_nurse",
   },
   {
-    text: "The customizability and integration capabilities of this app are top-notch.",
+    text: "The AI-assisted appointment scheduling has optimized our patient flow, reducing wait times significantly.",
     imageSrc: avatar6.src,
-    name: "Riley Smith",
-    username: "@rileysmith1",
+    name: "Dr. Robert Simmons",
+    username: "@drrobertsimmons",
   },
   {
-    text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
+    text: "Having a centralized system for all hospital departments has improved collaboration and efficiency.",
     imageSrc: avatar7.src,
-    name: "Jordan Patels",
-    username: "@jpatelsdesign",
+    name: "Olivia Thompson",
+    username: "@oliviathompson_hr",
   },
   {
-    text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
+    text: "I can now access patient records securely from any device, ensuring better and faster decision-making.",
     imageSrc: avatar8.src,
-    name: "Sam Dawson",
-    username: "@dawsontechtips",
+    name: "William Harris",
+    username: "@wharris_medtech",
   },
   {
-    text: "Its user-friendly interface and robust features support our diverse needs.",
+    text: "This SaaS solution has transformed how we manage medical inventory, reducing waste and optimizing stock levels.",
     imageSrc: avatar9.src,
-    name: "Casey Harper",
-    username: "@casey09",
+    name: "Sophia Martinez",
+    username: "@smartinez_supply",
   },
 ];
 
@@ -128,10 +128,12 @@ export const Testimonials = () => {
           <div className="flex justify-center">
             <div className="tag">Testimonials</div>
           </div>
-          <h2 className="section-title mt-5">What our users say</h2>
+          <h2 className="section-title mt-5">
+            What Healthcare Professionals Say
+          </h2>
           <p className="section-description mt-5">
-            From intuitive design to powerful features, our app has become an
-            essential tool for users around the world.
+            From seamless patient management to AI-powered automation, our
+            platform is transforming hospital operations worldwide.
           </p>
         </div>
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">

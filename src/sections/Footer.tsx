@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/assets/logosaas.png";
+import logo from "@/assets/vitalis-logo.png";
 import SocialX from "@/assets/social-x.svg";
 import SocialInsta from "@/assets/social-insta.svg";
 import SocialLinkedIn from "@/assets/social-linkedin.svg";
@@ -28,9 +28,7 @@ export const Footer = () => {
           <SocialPin />
           <SocialYoutube />
         </div>
-        <p className="mt-6">
-          &copy; 2024 Your Company, Inc. All rights reserved.
-        </p>
+        <p className="mt-6">&copy; 2024 VITALIS, Inc. All rights reserved.</p>
       </div>
     </footer>
   );
