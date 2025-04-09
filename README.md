@@ -18,8 +18,9 @@ VITALIS is a modern AI-powered SaaS platform designed specifically for healthcar
 
 ## Screenshots
 
-![Platform Interface](src/assets/apercu.png)
-![Patient Management Dashboard](src/assets/apercu2.png)
+![Platform Interface](src/assets/landingPage1.png)
+![Platform Interface](src/assets/landingPage2.png)
+![Platform Interface](src/assets/landingPage3.png)
 
 ## Technology Stack
 
