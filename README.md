@@ -1,4 +1,4 @@
-# VITALIS - Healthcare SaaS Platform
+# VITALIS - Healthcare SaaS Landing Page
 
 ![VITALIS Logo](src/assets/vitalis-logo.png)
 
