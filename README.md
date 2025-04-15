@@ -41,7 +41,7 @@ VITALIS is a modern AI-powered SaaS platform designed specifically for healthcar
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/landing-Page-Medical-saas.git
+   git clone https://github.com/ITNKOC/landing-Page-Medical-saas.git
    cd landing-Page-Medical-saas
    ```
 
