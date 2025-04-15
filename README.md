@@ -141,7 +141,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For any questions or support regarding the implementation, please contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or support regarding the implementation, please contact [koceila.djaballah@gmail.com](mailto:koceila.djaballah@gmail.com).
 
 ---
 
